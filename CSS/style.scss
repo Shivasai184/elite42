@@ -6,17 +6,12 @@ ul{
     list-style: none;
     background-color: grey;
 }
-ul.parent{
+ul.parent {
     display: flex;
     justify-content: flex-end;
     padding: 5px;
     li{
         position: relative;
-        &:hover{
-            ul{
-                display: block;
-            }
-        }
         a{
             padding: 10px;
             text-transform: uppercase;
@@ -27,13 +22,17 @@ ul.parent{
                 color: red;
             }
         }
+        ul{
+            position: absolute;
+            display: none;
+            background-color: gray;
+            padding: 5px;
+            top: 25px;
+        }
+        &:hover{
+            ul{
+                display: block;
+            }
+        }
     }
-}
-ul{
-    position: absolute;
-    display: none;
-    background-color: gray;
-    padding: 5px;
-    top: 25px;
-
 }

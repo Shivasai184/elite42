@@ -16,9 +16,6 @@ ul.parent {
 ul.parent li {
   position: relative;
 }
-ul.parent li:hover ul {
-  display: block;
-}
 ul.parent li a {
   padding: 10px;
   text-transform: uppercase;
@@ -29,11 +26,13 @@ ul.parent li a {
 ul.parent li a:hover {
   color: red;
 }
-
-ul {
+ul.parent li ul {
   position: absolute;
   display: none;
   background-color: gray;
   padding: 5px;
   top: 25px;
+}
+ul.parent li:hover ul {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
